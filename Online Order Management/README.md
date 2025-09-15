@@ -3,7 +3,7 @@
 Three Spring Boot modules:
 
 - **eureka-server** – Service registry (port `8761`)
-- **product-service** – Product CRUD + stock management (port `8081`)
+- **product-service** – Product CRUD + stock management (port `8881`)
 - **order-service** – Order CRUD + calls product-service to reserve/restock stock (port `8082`)
 
 ## Run (in three terminals)
@@ -27,7 +27,7 @@ cd order-service
 Eureka dashboard: http://localhost:8761
 
 H2 consoles:
-- Product Service: http://localhost:8081/h2 (JDBC URL: `jdbc:h2:mem:productsdb`)
+- Product Service: http://localhost:8881/h2 (JDBC URL: `jdbc:h2:mem:productsdb`)
 - Order Service: http://localhost:8082/h2 (JDBC URL: `jdbc:h2:mem:ordersdb`)
 
 ## REST endpoints
